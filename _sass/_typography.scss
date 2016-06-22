@@ -1,0 +1,78 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: $sans-serif;
+	text-rendering: optimizelegibility;
+	font-weight: 500;
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+	line-height: 1.333em;
+}
+
+h2, .h2 {
+	font-size: 1.75em;
+	line-height: 1.4em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	// font-size: 1.125em;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+h4, .h4 {
+	font-size: 1.2em;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+a, a:visited {
+	// color: $secondary-color;
+	// text-decoration: none;
+}
+/* on hover */
+a:hover {
+	// color: $grey-light;
+	// border-bottom: 2px dashed $grey-light;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.prominent {
+	font-family: $sans-serif;
+}
+
+
+.special {
+	font-family: $special;
+	font-style: italic;
+}
+
+.title {
+	// font-style: italic;
+	font-family: $special;
+	text-align: center;
+	font-weight: 300;
+	font-size: 2.4em;
+	@media screen and (min-width: 600px) {
+		text-align: left;
+	}
+}
+
+code {
+	background: $grey-light;
+	color: $black;
+	padding: 0 6px;
+}
+
+ul li {
+	font-size: 1.1em;
+}

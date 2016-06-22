@@ -1,0 +1,75 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 3em;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.5s;
+	z-index: 99;
+	background: $yellow;
+
+	&:hover {
+		opacity: 1 !important;
+	}
+
+	h1 {
+		font-family: $special;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 1.2em;
+	}
+
+	a {
+		text-decoration: none;
+		position: relative;
+		// opacity: 0.6;
+		top: 0;
+		&::after {
+			position: absolute;
+			top: 75%;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: rgba($black, 0.8);
+			content: '';
+			opacity: 0;
+			transition: opacity 0.3s, transform 0.3s;
+			transform: translateY(10px);
+		}
+		&:hover, &:focus {
+			opacity: 1;
+			top: -5px;
+			padding-bottom: 5px;
+		}
+		&:hover::after, &:focus::after {
+			opacity: 1;
+			transform: translateY(3px);
+		}
+	}
+
+	a, a:visited {
+		color: $black;
+		transition: all 0.3s;
+	}
+
+	nav {
+		text-align: center;
+		position: relative;
+		a {
+			margin: 0 5px;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) {
+	header {
+		flex-direction: row;
+		padding: .5em 3em;
+		position: fixed;
+		width: 100%;
+		&.scrolled {
+			opacity: 0.65;
+		}
+	}
+}

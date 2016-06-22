@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head2.html %}
+
+  <body class="{% if page.bodyClass %}{{page.bodyClass}}{% else %}{{page.title}}{% endif %}-body">
+        {% include header2.html %}
+
+<section class="content wrap-narrow">
+  <h2 class="title">{{page.title}}
+    <span>
+      <a class="button fz-half" href="assets/alexmejias-resume.pdf">View As PDF</a>
+    </span>
+  </h2>
+
+  <article class="clearfix">
+    <div class="personal_info clearfix">
+      <h3>Alex Mejias</h3>
+      <h4>
+        alexdmejias@gmail.com<br>
+        (516) 748 - 6801
+      </h4>
+      <h4>
+        alexdmejias.com<br>
+        github.com/amejias101
+      </h4>
+    </div>
+    {{content}}
+  </article>
+
+</section>
+
+{% include footer2.html %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+      if (!window.jQuery) {
+        document.write('<script src="/assets/js/jquery-2.1.0.min.js"><\/script>');
+      }
+    </script>
+
+    <?php echo js('assets/js/scripts'.$site->env_vars->js_type.'.js') ?>
+  </body>
+
+</html>

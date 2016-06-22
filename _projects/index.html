@@ -1,0 +1,26 @@
+---
+layout: default
+title: Projects
+bodyClass: projects
+---
+<section class="content wrap">
+  <h2 class="title"> {{ page.title }} </h2>
+  <article>
+    <div class="projects-container">
+      <h3 id="side_projects">Side Projects</h3>
+      <p>Some of my finished and current side projects.</p>
+      <div class="projects">
+      {% assign sortedProjects = site.projects | sort:'priority' | reverse %}
+        {% for project in sortedProjects %}
+          {% if project.type == 'personal' %}
+            {% include project-tile.html title=project.title excerpt=project.excerpt url=project.url thumbnail=project.thumbnail %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <hr>
+    </div>
+
+
+  </article>
+
+</section>

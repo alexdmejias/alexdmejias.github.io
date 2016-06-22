@@ -1,0 +1,63 @@
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$special:			'Oswald', $sans-serif;
+
+$white: #fff;
+$black: #000;
+$grey: #565656;
+$grey-light: #999;
+$grey-medium: #666;
+$grey-dark: #222;
+$slate-grey: lightslategray;
+$background: $white;
+$yellow: #f8f670;
+
+// $primary-color: yellow;
+$secondary-color: #B00000;
+$tertiary-color: red;
+
+$blue: #3498db;
+$blue_dark: #34495e;
+$red: #e74c3c;
+
+/*********************
+TOOLS
+*********************/
+@mixin clearfix {
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+	zoom: 1;
+}
+
+@mixin button {
+	display: inline-block;
+	margin: 0 3px;
+	width: auto;
+	background: $red;
+	padding: 4px 5px 2px;
+	color: $white;
+	border-radius: 3px;
+	text-decoration: none;
+	line-height: 1;
+	&:hover {
+		background: $slate-grey
+	}
+}
+.clearfix {
+  @include clearfix;
+}
+.button {
+  @include button;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.fz-half {
+	font-size: 0.5em;
+}
+
+.ta_center {
+	text-align: center;
+}

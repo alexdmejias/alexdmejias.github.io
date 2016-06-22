@@ -1,0 +1,41 @@
+/* WRAP */
+.wrap-wide {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wrap {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1000px;
+}
+
+.wrap-narrow {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+@media screen and (min-width: 700px) {
+	.wrap {
+		width: 80%;
+	}
+
+	.wrap-narrow {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.wrap {
+		width: 60%;
+	}
+
+	.wrap-narrow {
+		width: 50%;
+	}
+}
