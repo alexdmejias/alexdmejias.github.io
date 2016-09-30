@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head2.html %}
+  {% include head.html %}
 
   <body class="{% if page.bodyClass %}{{page.bodyClass}}{% else %}{{page.title}}{% endif %}-body">
 
-    {% include header2.html %}
+    {% include header.html %}
 
     {{ content }}
 
-    {% include footer2.html %}
+    {% include footer.html %}
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script>
