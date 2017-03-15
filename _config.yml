@@ -1,34 +1,31 @@
----
+# Site settings
 title: Alex Mejias
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  projects:
-    title: Projects
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 email: alexdmejias@gmail.com
-description: 'Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
-
-'
-baseurl: ''
-url: ''
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 homepage: "/"
 twitter_username: alexdmejias
 githubUrl: https://github.com/alexdmejias
 emailUrl: mailto:alexdmejias@gmail.com
 linkedinUrl: https://www.linkedin.com/in/alexdmejias
 twitterUrl: https://twitter.com/alexdmejias
+
 repository: alexdmejias/alexdmejias.github.io
+
+# Build settings
 markdown: kramdown
-username: alexdmejias
-repo: alexdmejias.github.io
-branch: gh-pages
-source: "."
-destination: _site
+collections:
+  projects:
+    output: true
+
+username:             alexdmejias
+repo:                 alexdmejias.github.io
+branch:               gh-pages
+
+# Jekyll source / destination
+source:               .
+destination:          _site
