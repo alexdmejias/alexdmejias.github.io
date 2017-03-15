@@ -14,8 +14,18 @@ emailUrl: mailto:alexdmejias@gmail.com
 linkedinUrl: https://www.linkedin.com/in/alexdmejias
 twitterUrl: https://twitter.com/alexdmejias
 
+repository: alexdmejias/alexdmejias.github.io
+
 # Build settings
 markdown: kramdown
 collections:
   projects:
     output: true
+
+username:             alexdmejias
+repo:                 alexdmejias.github.io
+branch:               gh-pages
+
+# Jekyll source / destination
+source:               .
+destination:          _site
