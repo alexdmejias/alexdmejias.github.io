@@ -21,3 +21,11 @@ markdown: kramdown
 collections:
   projects:
     output: true
+
+username:             alexdmejias
+repo:                 alexdmejias.github.io
+branch:               gh-pages
+
+# Jekyll source / destination
+source:               .
+destination:          _site
