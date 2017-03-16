@@ -8,7 +8,7 @@ excerpt: Keeping Track of My Pocket Queue
 priority: 40
 ---
 
-<p>Curious about how much I was falling behind in my (link:https://getpocket.com/about/ text:Pocket) reading list, I decided to graph the amount of articles in it.</p>
+Curious about how much I was falling behind in my [Pocket](https://getpocket.com/about/) reading list, I decided to graph the amount of articles in it.
 
 <p>Right now, the project is built on D3 and Laravel. Through the use of a cron job, the application can query the Pocket servers and compare them against the last entry made, if the two numbers are different, and through my RESTful api I can add and control existing points.</p>
 
@@ -16,4 +16,5 @@ priority: 40
 
 <p>Update: I pulled down the project as I became too obsessed with lowering my total count.</p>
 
-![Old image of the project]({{ site.url }}/assets/sized/pocket-stats/overview-small.jpg)
+![Old image of the project]({{ site.url }}/assets/images/content/sized/pocket-stats/overview-large.jpg)
+_Old image of the project, before I pulled it down_

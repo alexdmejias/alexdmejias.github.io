@@ -8,7 +8,7 @@ excerpt: Physical Time Tracking Button
 priority: 100
 ---
 
-(resimage: timer-reminder/on.jpg)
+![timer reminder image]({{site.url}}/assets/images/content/sized/timer-reminder/on-large.jpg)
 
 <h3>Problem</h3>
 
@@ -49,7 +49,7 @@ priority: 100
 
 <h4>Electronics</h4>
 
-(resimage: timer-reminder/proto-board.jpg)
+![timer reminder image]({{site.url}}/assets/images/content/sized/timer-reminder/proto-board-large.jpg)
 
 <p>Outside the microcontroller there are only two main components, the LED ring and the button. All the necessary connectors, capacitors, and resistors are connected to a prototyping board mounted on the Arduino, making it a pseudo shield. The hardest part of this was bending the leads of the connectors to match the non-standard pitch of connector that the Arduino uses. Instead of soldering the cables for the button and the LED ring directly to the board, I decided to use regular connectors. The use of connectors should make the project easier to maintain and upgrade later on.</p>
 
@@ -59,17 +59,17 @@ priority: 100
 
 <h5>Button</h5>
 
-(resimage: timer-reminder/button-open.jpg)
+![timer reminder image]({{site.url}}/assets/images/content/sized/timer-reminder/button-open-large.jpg)
 
 <p>Because the button that I had seemed to have issues with the signals that it was sending, I removed all of the buttons electronic components. In order to make the button work without any of its electronic components, I placed a small tactile button under the big button, so it could be pressed every time the bigger button is pressed.</p>
 
-(resimage: timer-reminder/tactile-button.jpg)
+![timer reminder image]({{site.url}}/assets/images/content/sized/timer-reminder/tactile-button-large.jpg)
 
 <h5>Lights</h5>
 
 <p>The second major component of the project are the lights. Originally I thought about using the same LED that came with the button. However, after some initial testing, I noticed that the button had low visibility during the day so I removed the included LED. Next, I thought about connecting four LEDs and putting them through four holes that were already in the enclosure (not sure why there were four predrilled holes). The LEDs would have been controlled through a shift register in order to save the valuable PWM pins on the Arduino. After some more testing and hole drilling, I decided that even with four LEDs the button would not be bright enough for daylight visibility. To mitigate the brightness issue, I thought about installing an additional four LEDs. Only after drilling another set of four holes did I realize that I would now have to manage 16 cables ((ground + vcc) * 8). Only after stepping back for a while, did I realize that I could use a recently purchased LED ring.</p>
 
-(resimage: timer-reminder/holes.jpg)
+![timer reminder image]({{site.url}}/assets/images/content/sized/timer-reminder/holes-large.jpg)
 
 <p>The chosen ring is compact enough to be placed between the light diffuser and the part of the button that will press the tactile button. It has 24 individually controlled SMD RGB LEDs driven by WS2812 chips. Furthermore, the ring is chainable and compatible with the NeoPixel library and only requires a total of three cables. It is recommended to also place a capacitor between ground and vcc and a resistor to the data line.</p>
 
